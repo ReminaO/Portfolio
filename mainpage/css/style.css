@@ -1,0 +1,119 @@
+html{
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/wave-haikei_resultat.webp");
+    background-repeat: no-repeat;
+}
+.logo img{
+    object-fit: cover;
+    height: 50px;
+    width: 50%;
+}
+.nav-item {
+    list-style-type: none;
+    /* padding-right: 20px; */
+    padding-left: 40px;
+}
+.nav-item:hover {
+    text-decoration: underline;
+}
+.nav-link {
+    text-decoration: none;
+    padding: 20px;
+    font-family: 'Cabin Sketch', cursive;
+    color: black;
+}
+.navbar-brand {
+    font-family: 'Cabin Sketch', cursive;
+}
+main {
+    display: flex;
+}
+p {
+    font-family: 'Roboto', sans-serif;
+    
+}
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 50px;
+}
+h4 {
+    font-family: 'Roboto', sans-serif;
+    color:rgb(173, 101, 101);
+}
+/* Page Principale */
+.welcome img{
+    object-fit: cover;
+    height: 790px;
+    width: 100%;
+    -webkit-box-shadow: 4px 0 5px 0.8px rgba(0,0,0,0.1);
+    box-shadow: 4px 0 5px 0.8px rgba(0,0,0,0.1);
+}
+.description p {
+    text-align: center;
+}
+.presentation {
+    font-size: 30px;
+}
+.passion {
+    font-size: 25px;
+}
+span {
+    color:rgb(173, 101, 101);
+}
+
+
+/* Page Parcours */
+.path img{
+    object-fit: cover;
+    height: 1200px;
+    width: 100%;
+    -webkit-box-shadow: 4px 0 5px 0.8px rgba(0,0,0,0.1);
+    box-shadow: 4px 0 5px 0.8px rgba(0,0,0,0.1);
+}
+.parcours-title {
+    color:rgb(173, 101, 101);
+}
+.bootstrap img{
+    object-fit: contain;
+    height: 100px;
+    width: 10%;
+}
+.bootstrap {
+    display: flex;
+    justify-content: flex-start;
+}
+.vue img {
+    object-fit: contain;
+    height: 100px;
+    width: 10%;
+}
+/* Page Contact */
+.contact img {
+    object-fit: cover;
+    height: 780px;
+    width: 100%;
+    -webkit-box-shadow: 4px 0 5px 0.8px rgba(0,0,0,0.1);
+    box-shadow: 4px 0 5px 0.8px rgba(0,0,0,0.1);
+}
+i {
+    font-size: 30px;
+    margin-right: 10px;
+    padding-bottom: 20px;
+}
+.description-contact a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Page Projets */
+.project img {
+    object-fit: cover;
+    height: 1130px;
+    width: 75%;
+    -webkit-box-shadow: 4px 0 5px 0.8px rgba(0,0,0,0.1);
+    box-shadow: 4px 0 5px 0.8px rgba(0,0,0,0.1);
+}
+
+
