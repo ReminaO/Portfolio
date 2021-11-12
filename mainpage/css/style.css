@@ -115,5 +115,11 @@ i {
     -webkit-box-shadow: 4px 0 5px 0.8px rgba(0,0,0,0.1);
     box-shadow: 4px 0 5px 0.8px rgba(0,0,0,0.1);
 }
-
-
+.card:hover {
+    transform: scale(1.05);
+    transition: ease-in-out;
+}
+.card {
+    -webkit-box-shadow: 4px 0 5px 0.8px rgba(0,0,0,0.1);
+    box-shadow: 4px 0 5px 0.8px rgba(0,0,0,0.1);
+}
