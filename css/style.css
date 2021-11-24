@@ -1,8 +1,6 @@
 html{
     margin: 0;
     padding: 0;
-    background-image: url("../images/wave-haikei_resultat.webp");
-    background-repeat: no-repeat;
 }
 .logo img{
     object-fit: cover;
@@ -41,6 +39,20 @@ h4 {
     font-family: 'Roboto', sans-serif;
     color:rgb(173, 101, 101);
 }
+footer {
+    background:rgb(202, 156, 155);
+    height: 90px;
+}
+.signature p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+.fa-copyright {
+    font-size: 15px;
+    margin: 5px;
+}
+
 /* Page Principale */
 .welcome img{
     object-fit: cover;
