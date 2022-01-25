@@ -1,4 +1,6 @@
 console.log('connecté'); 
+
+//Mise en place du menu burger 
 //Icone burger
 const icone = document.querySelector('.navbar-mobile i');
 //Div modal
@@ -10,6 +12,7 @@ icone.addEventListener('click', function () {
     icone.classList.toggle('fa-times')//Affichage de l'iconer 'fermer'
 })
 
+//Mise en place du caroussel
 var slideIndex = 1;
 showSlides(slideIndex);
 

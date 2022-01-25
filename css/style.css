@@ -18,7 +18,7 @@ main {
     height: 100vh;
 }
 
-p, h4, h1 {
+p, h4, h1, h2 {
     font-family: 'Roboto', sans-serif;
 }
 
@@ -152,17 +152,20 @@ span {
 .project img {
     object-fit: cover;
     height: 100vh;
-    width: 75%;
+    width: 100%;
     -webkit-box-shadow: 4px 0 5px 0.8px rgba(0,0,0,0.1);
     box-shadow: 4px 0 5px 0.8px rgba(0,0,0,0.1);
 }
-.card:hover {
-    transform: scale(1.03);
-    transition: transform 0.5s ease-in-out;
+.caroussel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width:100%;
+    padding: 1rem
 }
-.card {
-    -webkit-box-shadow: 4px 0 5px 0.8px rgba(0,0,0,0.1);
-    box-shadow: 4px 0 5px 0.8px rgba(0,0,0,0.1);
+.caroussel h2 {
+    color:rgb(202, 156, 155)
 }
 
 /*STYLE MENU DESKTOP*/
@@ -174,6 +177,7 @@ nav {
     background-color: #26272e;
     
 }
+
 
 nav a:hover {
     color: rgb(173, 101, 101);
