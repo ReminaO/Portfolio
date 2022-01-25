@@ -173,6 +173,9 @@ span {
 .caroussel h2 {
     color:rgb(202, 156, 155)
 }
+.project-title {
+    width: 20%
+}
 
 /*STYLE MENU DESKTOP*/
 nav {
@@ -266,6 +269,11 @@ nav a:hover {
 
 /*Media queries*/
 @media screen and (max-width : 70rem){
+    span {
+        color:rgb(173, 101, 101);
+        font-size: 2rem;
+    }
+    /* Menu */
     .navbar-desktop{
         display: none;
     }
@@ -273,18 +281,19 @@ nav a:hover {
         display: block;
     }
 
+    /* Page Parcours */
+    
     .main-container{
-        justify-content: flex-start;
         height: 240vh;
     }
     .path img{
         height: 240vh
-
     }
-    span {
-        color:rgb(173, 101, 101);
-        font-size: 2rem;
+    .container-path {
+        padding: 2rem;
     }
+    /* Page contact */
+    
     .description-contact i {
         font-size: 2rem;
     }
@@ -294,5 +303,14 @@ nav a:hover {
     
     .fa-copyright {
         font-size: 0.9rem;
+    }
+    /* Page projets */
+    .project-title {
+        width: 100%
+    }
+
+    /* Redimension de l'image thème */
+    .path, .welcome, .contact, .project {
+        width: 10%
     }
 }
