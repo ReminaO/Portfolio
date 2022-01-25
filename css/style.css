@@ -29,9 +29,11 @@ h1 {
 a {
     text-decoration: none;
 }
+
 article{
     width: 100%;
 }
+
 footer {
     background:rgb(202, 156, 155);
     height: 100px;
