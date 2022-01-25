@@ -7,12 +7,12 @@
   margin: auto;
   backdrop-filter: blur(50px);
   -webkit-backdrop-filter: blur(50px);
-  -webkit-box-shadow: 4px 0 5px 0.8px rgba(0,0,0,0.1);
-    box-shadow: 4px 0 5px 0.8px rgba(0,0,0,0.1);
-    border: black 1px solid;
-    display: flex;
-    align-items: flex-start;
-    justify-content: start;
+  -webkit-box-shadow: 0 0 20px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 0 20px 5px rgba(0,0,0,0.1);
+  border: black 1px solid;
+  display: flex;
+  align-items: flex-start;
+  justify-content: start;
 }
 
 /* Hide the images by default */
