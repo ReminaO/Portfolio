@@ -1,94 +1,118 @@
-html{
+*{
     margin: 0;
     padding: 0;
-}
-.logo img{
-    object-fit: cover;
-    height: 50px;
-    width: 50%;
-}
-.nav-item {
-    list-style-type: none;
-    /* padding-right: 20px; */
-    padding-left: 40px;
-}
-.nav-item:hover {
-    text-decoration: underline;
-}
-.nav-link {
+    box-sizing: border-box;
     text-decoration: none;
-    padding: 20px;
-    font-family: 'Cabin Sketch', cursive;
-    color: black;
 }
-.navbar-brand {
-    font-family: 'Cabin Sketch', cursive;
+
+html{
+    font-size: 62.5%;/* 1rem = 10px*/
 }
+
+body{
+    font-size: 1.4rem;/* soit 14px*/
+}
+
 main {
     display: flex;
+    height: 100vh;
 }
-p {
+
+p, h4, h1 {
     font-family: 'Roboto', sans-serif;
-    
 }
+
 h1 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 50px;
+    font-size: 3.5rem;
 }
-h4 {
-    font-family: 'Roboto', sans-serif;
-    color:rgb(173, 101, 101);
+
+article{
+    width: 100%;
 }
 footer {
     background:rgb(202, 156, 155);
-    height: 90px;
+    height: 100px;
+    bottom: 0;
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
 }
+
 .signature p {
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
+    font-size: 2rem;
     font-weight: bold;
 }
+
 .fa-copyright {
-    font-size: 15px;
+    font-size: 1.5rem;
     margin: 5px;
 }
 
 /* Page Principale */
 .welcome img{
     object-fit: cover;
-    height: 790px;
+    height: 100vh;
     width: 100%;
     -webkit-box-shadow: 4px 0 5px 0.8px rgba(0,0,0,0.1);
     box-shadow: 4px 0 5px 0.8px rgba(0,0,0,0.1);
+}
+.welcome {
+    width: 50%;
+}
+.container {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .description p {
     text-align: center;
 }
+.description h1 {
+    text-align: center;
+    font-size: 3.5rem;
+}
 .presentation {
-    font-size: 30px;
+    font-size: 2.5rem;
 }
 .passion {
-    font-size: 25px;
+    font-size: 2.5rem;
 }
 span {
     color:rgb(173, 101, 101);
+    font-size: 3rem;
 }
 
 
 /* Page Parcours */
+.path{
+    width: 50%;
+}
 .path img{
     object-fit: cover;
-    height: 1600px;
-    width: 100%;
+    height: 100vh;
+    width: 80%;
     -webkit-box-shadow: 4px 0 5px 0.8px rgba(0,0,0,0.1);
     box-shadow: 4px 0 5px 0.8px rgba(0,0,0,0.1);
 }
+.main-container{
+    display: flex;
+    height: 100vh;
+}
+
+.container-path li, p{
+    padding: 0.3rem;
+}
+
 .parcours-title {
     color:rgb(173, 101, 101);
+    padding: 0.3rem;
 }
+
 .bootstrap img, .vue img{
     object-fit: contain;
-    height: 100px;
+    height: 8rem;
     width: 30%;
     padding: 10px;
 }
@@ -96,36 +120,169 @@ span {
 /* Page Contact */
 .contact img {
     object-fit: cover;
-    height: 780px;
+    height: 100vh;
     width: 100%;
     -webkit-box-shadow: 4px 0 5px 0.8px rgba(0,0,0,0.1);
     box-shadow: 4px 0 5px 0.8px rgba(0,0,0,0.1);
 }
 
-i {
-    font-size: 30px;
+.linkedin i, .mail i {
+    font-size: 3rem;
     margin-right: 10px;
     padding-bottom: 20px;
+}
+
+.linkedin:hover, .mail:hover {
+    color:rgb(202, 156, 155);
+}
+.description-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .description-contact a {
     text-decoration: none;
     color: black;
     font-family: 'Roboto', sans-serif;
+    padding: 1.4rem;
 }
 
 /* Page Projets */
 .project img {
     object-fit: cover;
-    height: 2690px;
+    height: 100vh;
     width: 75%;
     -webkit-box-shadow: 4px 0 5px 0.8px rgba(0,0,0,0.1);
     box-shadow: 4px 0 5px 0.8px rgba(0,0,0,0.1);
 }
 .card:hover {
     transform: scale(1.03);
-    transition: ease-in-out;
+    transition: transform 0.5s ease-in-out;
 }
 .card {
     -webkit-box-shadow: 4px 0 5px 0.8px rgba(0,0,0,0.1);
     box-shadow: 4px 0 5px 0.8px rgba(0,0,0,0.1);
+}
+
+/*STYLE MENU DESKTOP*/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    height: 7rem;
+    background-color: #26272e;
+    
+}
+
+nav a:hover {
+    color: rgb(173, 101, 101);
+    text-decoration: white wavy underline
+}
+
+.title:hover{
+    text-decoration: none;
+    color: white
+}
+
+.title{
+    height: 2rem;
+    line-height: 1rem;
+    font-size: 1.7rem;
+    font-family: 'Cabin Sketch', cursive;
+    text-decoration: none;
+    color: white;
+    padding-left: 1.5rem;
+}
+
+/* style des liens*/
+.navbar-desktop a{
+    padding: 3rem;
+    text-decoration: none;
+    font-size: 1.4rem;
+    color: white;
+    font-family: 'Cabin Sketch', cursive;
+}
+.navbar-desktop a:hover {
+    color: rgb(173, 101, 101);
+}
+/*STYLE MENU MOBILE*/
+.navbar-mobile{
+    display: none;
+}
+
+.navbar-mobile i {
+    position: fixed;
+    z-index: 9999;
+    top: 9px;
+    right: 15px;
+    font-size: 3rem;
+    color: white;
+}
+.modal {
+    transition: top 0.9s;
+    background-color: rgb(173, 101, 101);
+    height: 100vh;
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    width: 100%;
+    opacity: 0.9;
+    z-index: 9980;
+}
+
+.navbar-mobile .navbar-mobile-list{
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.navbar-mobile .navbar-mobile-list a{
+    font-size: 5rem;
+    font-weight: 800;
+    color: #1E2337;
+    padding: 2rem;
+}
+
+.navbar-mobile .navbar-mobile-list a:hover{
+    text-decoration: white wavy underline
+}
+
+.change-modal{
+    top: 0;
+}
+
+/*Media queries*/
+@media screen and (max-width : 70rem){
+    .navbar-desktop{
+        display: none;
+    }
+    .navbar-mobile{
+        display: block;
+    }
+
+    .main-container{
+        justify-content: flex-start;
+        height: 240vh;
+    }
+    .path img{
+        height: 240vh
+
+    }
+    span {
+        color:rgb(173, 101, 101);
+        font-size: 2rem;
+    }
+    .description-contact i {
+        font-size: 2rem;
+    }
+    .signature p {
+        font-size: 1.5rem;
+    }
+    
+    .fa-copyright {
+        font-size: 0.9rem;
+    }
 }
